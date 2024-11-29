@@ -8,6 +8,7 @@ interface TaskBoardProps {
   tasks: Task[];
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function TaskBoard({ project, tasks }: TaskBoardProps) {
   const [boardTasks, setBoardTasks] = useState(tasks);
 
