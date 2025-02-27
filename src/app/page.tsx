@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import logo from "@/assets/logo.png";
+import { Progress } from "@heroui/react";
 
 export default function Home() {
   return (
@@ -185,6 +188,11 @@ export default function Home() {
                     culpa quia nobis, nesciunt, sequi dolorum dolorem porro
                     asperiores reiciendis maiores recusandae dicta at delectus.
                   </p>
+                  <Progress
+                    aria-label="Loading..."
+                    className="max-w-md"
+                    value={60}
+                  />
                 </div>
                 <div className="flex flex-row gap-2">
                   <span className="bg-orange-100 p-2 rounded-sm text-orange-600 ">
@@ -215,8 +223,47 @@ export default function Home() {
                 </div>
                 <hr />
                 <div className="mt-6">
-                  <span className="p-2  bg-amber-200 text-amber-600 rounded-md ">
+                  <span className="p-2  bg-red-200 text-red-600 rounded-md ">
                     High Priority
+                  </span>
+                  <p className=" text-gray-600 mt-4 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia quos temporibus obcaecati nostrum. Neque aperiam
+                    culpa quia nobis, nesciunt, sequi dolorum dolorem porro
+                    asperiores reiciendis maiores recusandae dicta at delectus.
+                  </p>
+                </div>
+                <div className="flex flex-row gap-2">
+                  <span className="bg-orange-100 p-2 rounded-sm text-orange-600 ">
+                    tag name
+                  </span>
+                  <span className="bg-orange-100 p-2 rounded-sm text-orange-600 ">
+                    tag name 2
+                  </span>
+                </div>
+              </div>
+              <div className="h-auto bg-white rounded-md p-4">
+                <div className="flex flex-row items-center w-full mb-4">
+                  <h2 className=" font-semibold">Ticket title 3</h2>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#9ca3af"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-8 ml-auto rounded-full p-1 stroke-gray-400 border border-gray-400"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                </div>
+                <hr />
+                <div className="mt-6">
+                  <span className="p-2  bg-blue-200 text-blue-600 rounded-md ">
+                    Medium Priority
                   </span>
                   <p className=" text-gray-600 mt-4 mb-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
