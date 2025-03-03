@@ -1,17 +1,12 @@
 import CommandPanel from "@/components/CommandPanel";
-import SideBar from "@/components/SideBar";
 import MainContentContainer from "@/components/MainContentContainer";
-import SideBarContainer from "@/components/SideBarContainer";
 import DashboardContainer from "@/components/DashboardContainer";
 import DashboardSectionContainer from "@/components/DashboardSectionContainer";
 import TaskBoard from "@/components/TaskBoard";
 
 export default function Home() {
   return (
-    <div className="p-6 flex w-full">
-      <SideBarContainer>
-        <SideBar />
-      </SideBarContainer>
+    <div className="flex w-full pl-48 pr-48 pt-12 pb-12">
       <MainContentContainer>
         <CommandPanel />
         <DashboardContainer>

@@ -1,6 +1,6 @@
 export default function CommandPanel() {
   return (
-    <div className="bg-white rounded-md flex flex-row h-20 ml-6 w-full">
+    <div className="bg-white rounded-md flex flex-row h-20  w-full">
       <div className="relative flex-grow ml-2">
         <input
           type="text"

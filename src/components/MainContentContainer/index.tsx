@@ -7,5 +7,5 @@ interface MainContentContainerProps {
 export default function MainContentContainer({
   children,
 }: MainContentContainerProps) {
-  return <div className="w-4/5 drop-shadow-md mr-6">{children}</div>;
+  return <div className="w-full drop-shadow-md">{children}</div>;
 }
