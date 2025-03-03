@@ -2,6 +2,7 @@ import { Button } from "@heroui/react";
 
 interface NJButtonProps {
   label: string;
+  onPress: () => void;
 }
 
 export const PlusIcon = () => {
@@ -10,9 +11,9 @@ export const PlusIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
+      strokeWidth={2}
       stroke="currentColor"
-      className="size-8 mt-auto mb-auto stroke-white"
+      className="size-6 mt-auto mb-auto stroke-white"
     >
       <path
         strokeLinecap="round"
@@ -23,6 +24,14 @@ export const PlusIcon = () => {
   );
 };
 
-export default function NJButton({ label }: NJButtonProps) {
-  return <Button>{label}</Button>;
+export default function NJButton({ label, onPress }: NJButtonProps) {
+  return (
+    <Button
+      onPress={onPress}
+      className="text-white bg-black text-xl pl-2 gap-0 rounded-md font-light"
+    >
+      <PlusIcon />
+      {label}
+    </Button>
+  );
 }

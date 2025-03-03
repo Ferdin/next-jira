@@ -6,7 +6,7 @@ import TaskBoard from "@/components/TaskBoard";
 
 export default function Home() {
   return (
-    <div className="flex w-full pl-48 pr-48 pt-12 pb-12">
+    <div className="flex w-full pl-56 pr-56 pt-16 pb-16">
       <MainContentContainer>
         <CommandPanel />
         <DashboardContainer>
