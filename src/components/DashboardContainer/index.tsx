@@ -7,5 +7,7 @@ interface DashboardContainerProps {
 export default function DashboardContainer({
   children,
 }: DashboardContainerProps) {
-  return <div className="flex flex-row w-full mt-6 gap-6">{children}</div>;
+  return (
+    <div className="flex flex-row w-full mt-6 gap-6 font-sans">{children}</div>
+  );
 }
