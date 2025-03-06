@@ -79,13 +79,11 @@ export default function TicketModal({
                 </Checkbox>
                 <DatePicker
                   isDisabled={!showTimeFrame}
-                  isReadOnly
                   label="From"
                   id="fromDate"
                 />
                 <DatePicker
                   isDisabled={!showTimeFrame}
-                  isReadOnly
                   label="To"
                   id="fromDate"
                 />
